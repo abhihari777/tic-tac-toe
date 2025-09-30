@@ -21,5 +21,5 @@ You can [play the game live here](https://your-live-link-if-hosted.com)
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/tic-tac-toe.git
+git clone https://github.com/yourusername/tic-tac-toe.git](https://github.com/abhihari777/tic-tac-toe.git
 cd tic-tac-toe
