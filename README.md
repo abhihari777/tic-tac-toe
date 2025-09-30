@@ -14,7 +14,7 @@ A simple web-based Tic Tac Toe game built with **HTML**, **CSS**, and **JavaScri
 
 ### 🔗 Play Online 
 
-You can [play the game live here][(https://abhihari777.github.io/tic-tac-toe/)]
+You can [play the game live here](https://abhihari777.github.io/tic-tac-toe/)
 
 ### 📥 Run Locally
 
