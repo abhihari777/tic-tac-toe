@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(maximalfocus-HakTxidk36I-unsplash.jpg);
+    background-color: #000509;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    margin-top: 40px;
+    background: linear-gradient(90deg, #4c5dd7, #c231c9, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+}
+
+.game {
+    height:55vh;
+    width:70vmin;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    gap:5px;
+    
+
+}
+
+.box {
+    height:18vmin;
+    width: 18vmin;
+    background-color: transparent;
+    border-radius: 1.2rem;
+    border:none;
+    outline: none;
+    font-size: 4.5rem;
+    font-family: "Black Ops One";
+    z-index:0;
+    position: relative;
+    cursor: pointer;
+    color:#c231c9;
+}
+
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 1.2rem;
+    width:18vmin;
+    height:18vmin;
+    background-color: #000210;
+    cursor: pointer;
+    border: 1px solid rgba(66, 56, 16,0.7); 
+
+    
+
+}
+
+.box::before {
+    content:"";
+    background:linear-gradient(45deg, #4c5dd7, #260b68, #c231c9, #1d0225);
+    position:absolute;
+    top: -4px;
+    left: -4px;
+    background-size: 600%;
+    z-index:-1;
+    width: calc(18vmin + 8px);
+    height: calc(18vmin + 8px);
+    filter: blur(10px);
+    border-radius: 1.2rem;
+    transition: opaacity 0.3s ease;
+    opacity:0;
+    animation: glowing 20s linear infinite;
+
+}
+
+@keyframes glowing {
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+
+.box:hover::before {
+    opacity:1;
+}
+
+
+#reset-btn {
+    padding: 1rem;
+    margin-top: 30px;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, #fbff00, #ff8c00, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    border: 1px solid rgba(67, 15, 15, 0.7); 
+    cursor: pointer;
+    font-family: monospace;
+
+}
+
+
+#new-btn {
+    padding: 1rem;
+    background: linear-gradient(90deg,#00e5ff, #003cff, #9d00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    border: 1px solid rgba(15, 63, 67, 0.7); 
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: monospace;
+
+}
+
+
+#msg {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #d4179e, #c231c9, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    font-family: monospace;
+}
+
+
+@media(max-width:767px) {
+    .box {
+        height:18vmin;
+        width:18vmin;
+        font-size: 4rem;
+    }
+
+    .game {
+       max-width:767px;
+       max-height:40vh;
+    }
+
+    main {
+        margin-top:15px;
+    }
+
+
+    .msg-container {
+        margin-top:10px;
+    }
+
+    #reset-btn {
+        position: relative;
+        top:16vmin;
+    }
+
+}
+
+@media (max-width:500px) {
+
+     .box {
+        height:18vmin;
+        width:18vmin;
+        font-size: 2.5rem;
+    }
+
+    .game {
+       max-width:400px;
+       max-height:28vh;
+    }
+
+    main {
+        margin-top:15px;
+    }
+
+
+    .msg-container {
+        margin-top:10px;
+        
+    }
+
+    #msg {
+        font-size:1.2rem;
+    }
+
+    #reset-btn {
+        position: relative;
+        top:18vmin;
+
+    }
+
+
+}
+
+
+@media (max-width:1030px) {
+    .game {
+        height: 40vh;
+    }
+
+    #reset-btn {
+        position: relative;
+        top:12vmin;
+        margin-bottom:100px;
+    }
+}
