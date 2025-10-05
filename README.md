@@ -16,10 +16,15 @@ A simple web-based Tic Tac Toe game built with **HTML**, **CSS**, and **JavaScri
 
 You can [play the game live here](https://abhihari777.github.io/tic-tac-toe/)
 
+## 🧾 License
+- This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
 ### 📥 Run Locally
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/abhihari777/tic-tac-toe.git
-cd tic-tac-toe
+cd tic-tac-toe 
+
+
